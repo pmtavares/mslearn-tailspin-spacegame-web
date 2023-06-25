@@ -1,13 +1,3 @@
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'restore'
-    feedsToUse: 'select'
-    vstsFeed: '0a437e19-f227-40d8-a74a-031b670a0bc2'
-    
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'publish'
-    publishWebProjects: true
+pool: MyAgentPool
+steps:
+- bash: echo hello world
